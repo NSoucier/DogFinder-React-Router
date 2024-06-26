@@ -16,13 +16,8 @@ function Form({ addColor }) {
 
   const handleClick = (evt) => {
     evt.preventDefault();
-    console.log('1')
     addColor(formData.color, formData.name);
-    console.log('2')
-
     setFormData(initialState);
-    console.log('3')
-
     navigate(`colors`);
   };
   return (
